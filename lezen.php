@@ -9,7 +9,7 @@ print "</pre>";
 
 foreach ($m as $zinnen){ //per rij van $m
 $aantal = $GLOBALS['aantal']; //haalt $aantal op
-$woorden = preg_split("/[ .!?,1234567890()	=+><-_]+/", $zinnen); //haalt de woorden uit elkaar
+$woorden = preg_split("/[ .!?,1234567890()	_=+><-]+/", $zinnen); //haalt de woorden uit elkaar
 print "<pre>";
 print_r ($woorden);
 print_r (array_count_values($woorden)); // laat zien welke woorden hoevaak voorkomen
